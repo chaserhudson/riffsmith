@@ -7,7 +7,7 @@
 ## Quick start
 
 1. Open `Linesmith.html`.
-2. Pick a song: search the **Songbook** (1,461 jazz tunes), hit the 🎲 for a random one, or build your own bars.
+2. Pick a song: choose a **Songbook** collection (7 books, 1,655 tunes — jazz standards, blues, and your practice playlists), search it or hit 🎲 for a random one, or build your own bars.
 3. Pick a figure from the Pattern **Preset** menu, or draw one on the grid.
 4. Hit **▶ Play**.
 
@@ -25,7 +25,7 @@ Three ways to enter changes, via the tabs top-left:
 
 Also in the card head:
 
-- **Songbook** — type a few letters, pick a tune; its changes load ready for a pattern.
+- **Songbook** — pick a collection, then type a few letters and pick a tune; its changes load ready for a pattern. Books: Jazz standards (1,461), Blues 50 (54), Exercises (50), Grantham Jazzmaster (24), All Keys All Directions (38), Progression Cycle All Keys (15), Main Chord Progressions (13) — or search all 1,655 at once. 🎲 pulls a random tune from the selected book.
 - **Key** — key signature and note spelling. **Play in** transposes the whole exercise.
 - **Repeat all** — loop the progression up to 32×.
 - **Cycle all 12 keys by** — repeat the exercise through every key, moving by half steps, 4ths, whatever you choose. The classic "all keys" workout.
@@ -60,7 +60,9 @@ Below the score, open **Bars** and click a chip: that bar can get its own patter
 ## Score & playback
 
 - The score is engraved live (abcjs). **☾ dark score** draws it light-on-dark; print/PDF always stay black on white.
+- **TAB** (checkbox on the score card) adds a guitar tablature staff under every system — standard tuning, engraved by abcjs itself, so it reflows on resize, follows into print and PDF, and the playback cursor tracks it. Fingering follows the **Register**: a named position keeps every note in that hand position (Position 5 → frets 4–8, with 9 as a pinky stretch), a fret window keeps notes strictly between your two frets, and Custom range uses abcjs's default (lowest-position) fingering. Per-bar register overrides aren't reflected in the TAB yet.
 - Transport: **▶ Play**, tempo 40–240 bpm, **Loop**, **Count-in**, instrument sound (guitars, piano, voice), **Backing** chords on/off. The cursor tracks the score during playback.
+- **? Guide** in the top bar opens this README inside the app (loads when the app is served over http(s), e.g. GitHub Pages).
 
 ## Library, versions, sharing, export
 
@@ -75,7 +77,7 @@ Below the score, open **Bars** and click a chip: that bar can get its own patter
 | File | What it is |
 |---|---|
 | `Linesmith.html` | **The app** — the current production version. Everything above describes this file. |
-| `Index.html` | Byte-identical copy of `Linesmith.html`, named for web hosting (servers serve `index.html` as the homepage). Keep the two in sync when updating. |
+| `Index.html` | Byte-identical copy of `Linesmith.html`, named for web hosting (GitHub Pages serves it as the homepage, with this README alongside). Keep the two in sync when updating. |
 | `Linesmith Ultimate_Guitar_Beta.html` | Beta with one addition: **Ultimate Guitar import** in the Import tab. Paste a UG song URL and Import — chords, title, artist, and key come across, one chord per bar (chord sheets carry no timing; tidy up in the bar strip). Works with community **Chords** pages; **Official** tabs contain no chord text, so it auto-searches and imports the top community Chords version. If fetching is blocked, select-all-copy the UG page and paste into the text box — saved UG pages (.html) also work in the drop zone. |
 | `Linesmith Launch Plan.md` | Roadmap for taking Linesmith public (naming, hosting, pricing, marketing). |
 | `Tab Integration Options.md` | Research doc on adding guitar tablature (abcjs native tabs vs. alphaTab vs. VexFlow vs. OSMD), with a recommended path. |
